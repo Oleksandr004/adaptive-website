@@ -1,0 +1,200 @@
+$font-family: 'DM Sans', sans-serif;
+.vegetables__pop-up {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 2;
+	overflow: scroll;
+	.pop__up-container {
+		height: 100%;
+		width: 100%;
+		width: 100%;
+		display: flex;
+	}
+	.pop__up-body {
+		border-radius: 20px;
+		width: 891px;
+		height: 911px;
+		background-color: #fff;
+		margin: auto;
+	}
+}
+
+.pop__up-body-container {
+	max-width: 811px;
+	margin: 0 auto;
+	position: relative;
+	@media (max-width: 640px) {
+		padding: 0 15px;
+	}
+}
+
+.pop__up-btn-close {
+	cursor: pointer;
+	position: absolute;
+	margin-top: 20px;
+	right: 0;
+}
+
+.pop__up-title {
+	font-family: $font-family;
+	font-weight: 500;
+	font-size: clamp(28px, 4.489vw, 40px);
+	line-height: 110%;
+	letter-spacing: -0.04em;
+	text-transform: uppercase;
+	color: #141414;
+	text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+	margin-top: clamp(20px, 4.489vw, 40px);
+}
+
+.pop__up-list-buskets {
+	display: grid;
+	justify-content: center;
+	grid-template-columns:
+		clamp(200px, 28.844vw, 257px) clamp(200px, 28.844vw, 257px)
+		clamp(200px, 28.844vw, 257px);
+	grid-template-rows: clamp(250px, 34.568vw, 308px);
+	gap: clamp(12px, 2.245vw, 20px);
+	margin-top: 40px;
+	@media (max-width: 640px) {
+		grid-template-columns: 100%;
+		grid-template-rows: 119px 119px 119px;
+	}
+}
+.vegetables img,
+.cabbage img,
+.tomatos img {
+	width: clmap(172px, 27.273vw, 243px);
+	height: clamp(142px, 22.447vw, 200px);
+	@media (max-width: 640px) {
+		width: 94px;
+		height: 78px;
+		position: absolute;
+		z-index: 23213;
+		top: 33px;
+		left: 171px;
+	}
+}
+
+.list__buskets-item {
+	background-color: #faf3e7;
+	border-radius: 20px;
+	img {
+		margin-left: 7px;
+	}
+	position: relative;
+}
+
+.buskets-title {
+	margin-top: 40px;
+	margin-left: 20px;
+	font-family: $font-family;
+	font-weight: 700;
+	font-size: 24px;
+	font-size: clamp(18px, 2.694vw, 24px);
+	line-height: 117%;
+	letter-spacing: -0.04em;
+	color: #141414;
+	span {
+		display: block;
+		margin-top: 8px;
+		font-family: $font-family;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 129%;
+		letter-spacing: -0.02em;
+		color: #141414;
+	}
+}
+
+.pop__up-form {
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	position: relative;
+	z-index: 11;
+	@media (max-width: 640px) {
+		margin: 40px auto 0;
+	}
+}
+
+.pop__up-inputs {
+	display: flex;
+	justify-content: space-between;
+	img {
+		position: absolute;
+		right: -60px;
+	}
+	@media (max-width: 640px) {
+		img {
+			display: none;
+		}
+	}
+}
+
+.pop__up-form-email,
+.pop__up-form-name,
+.pop__up-form-card,
+.pop__up-form-comments {
+	width: 360px;
+	height: 48px;
+	border-radius: 100px;
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.04em;
+	color: rgb(20, 20, 20);
+	padding-left: 24px;
+	border: 1px solid rgba(20, 20, 20, 0.9);
+}
+
+.pop__up-form-comments {
+	height: 145px;
+	border-radius: 20px;
+	@media (max-width: 640px) {
+		height: 132px;
+	}
+}
+
+.pop__up_form-btn {
+	position: relative;
+	left: 0;
+	font-family: $font-family;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 129%;
+	letter-spacing: -0.04em;
+	text-transform: capitalize;
+	color: #fff;
+	border-radius: 100px;
+	padding: 15px 35px;
+	width: 114px;
+	height: 48px;
+	background: #fc8a11;
+}
+
+.buskets__choose-btn {
+	position: absolute;
+	border: 1.5px solid #a1c487;
+	border-radius: 4px;
+	width: 20px;
+	height: 20px;
+	top: 14px;
+	right: 14px;
+}
+
+.buskets__choose-btn_active {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.vegetables__pop-up-disabled {
+	display: none;
+}

@@ -1,0 +1,127 @@
+@import "/src/styles/variables.scss";
+
+.main {
+  background-color: #a1c487;
+  margin-top: 16px;
+  padding-top: 132px;
+  padding-bottom: 32px;
+}
+.container {
+  @extend %container-styles;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.text {
+  img {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    width: clamp(129px, 15.938vw, 204px);
+    height: clamp (44px, 5.625vw, 72px);
+  }
+  padding-right: 6px;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.img__woman {
+  height: clamp(236px, 33.516vw, 429px);
+  width: clamp(303px, 40.391vw, 517px);
+}
+.title {
+  color: #fff;
+  font-family: DM Sans;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 500;
+  line-height: clamp(44px , 5.859vw , 75px);
+  text-transform: uppercase;
+  span {
+    color: #eaf7e5;
+  }
+  margin: 16px 0;
+}
+.subtitle {
+  color: rgb(255, 255, 255);
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -4%;
+  margin-bottom: 32px;
+  @media(max-width: 550px) {
+    // br {display: none;}
+  }
+}
+.button {
+  color: rgb(252, 138, 17);
+  font-family: DM Sans;
+  font-size: clamp(14px, 2.188vw, 28px);
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -4%;
+  text-transform: uppercase;
+  color: #fc8a11;
+  transform: rotate(-14deg);
+  text-align: center;
+  height: clamp(68px, 10.313vw, 132px);
+  width: clamp(68px, 10.313vw, 132px); 
+  background-color: #faf3e7;
+  border-radius: 50%;
+  &:hover {
+    background-color: #eaf7e5;
+    color: #a1c487;
+  }
+}
+.hastags {
+  margin-top: 50px;
+  position: relative;
+}
+.hastags__first-row,
+.hastags__second-row {
+  display: flex;
+  gap: 8px;
+  p {
+    cursor: pointer;
+    padding: clamp(8px, 0.825vw, 12px) clamp(14px, 2vw, 32px);
+    color: rgb(249, 247, 244);
+    font-family: DM Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: -4%;
+    text-transform: uppercase;
+    border: 1px solid rgb(249, 247, 244);
+    border-radius: 1000px;
+    &:hover {
+      background-color: #fff;
+      color: black;
+    }
+  }
+}
+.hastags__second-row {
+  margin-top: 8px;
+}
+@media(max-width: 959px) {
+  .body {
+    display: block;
+    max-width: 537px;
+    margin: 0 auto;
+  }
+  .img {
+    max-width: clamp(303px, 40.391vw, 517px);
+    margin: 0 auto;
+    position: relative;
+    bottom: 36px;
+  }
+  .main {
+    padding-top: 66px;
+  }
+  .subtitle{
+    br{display: none;}
+  }
+}

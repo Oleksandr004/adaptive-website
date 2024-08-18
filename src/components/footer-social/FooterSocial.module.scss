@@ -1,0 +1,19 @@
+.social-row__list {
+  display: flex;
+  gap: 20px;
+}
+.social-row__item {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.social-row__item:hover {
+  border: 1px solid #a1c487;
+  path {
+    fill: #a1c487;
+  }
+}
+.facebook,
+.youtube,
+.instagram {
+  padding: 8px;
+}

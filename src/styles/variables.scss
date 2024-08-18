@@ -1,0 +1,11 @@
+%container-styles {
+  max-width: 1246px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+%body-background {
+  height: 460px;
+  background-color: #faf3e7;
+  background-image: url(/public/BG.png);
+  border-radius: clamp(40px, 6.25vw, 80px);
+}

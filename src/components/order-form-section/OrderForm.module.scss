@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+.order-form {
+	margin-bottom: 115px;
+}
+.container {
+	@extend %container-styles;
+}
+.body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.order-form__text {
+	padding-right: 15px;
+}
+.text__title {
+	color: rgb(20, 20, 20);
+	font-family: DM Sans;
+	font-size: clamp(24px, 3.75vw, 48px);
+	font-weight: 500;
+	line-height: clamp(28px, 3.906vw, 50px);
+	letter-spacing: -4%;
+	text-transform: uppercase;
+}
+.text__subtitle {
+	color: rgb(20, 20, 20);
+	font-family: DM Sans;
+	font-size: clamp(14px, 1.406vw, 18px);
+	font-weight: 400;
+	line-height: clamp(18px, 1.875vw, 24px);
+	line-height: 24px;
+	letter-spacing: -4%;
+	margin: clamp(20px, 3.125vw, 40px) 0 clamp(40px, 6.25vw, 80px);
+}
+.img__background {
+	max-width: 525px;
+	max-height: 536px;
+	background-color: #eaf7e5;
+	background-image: url(/public/BG.png);
+	padding-top: 37px;
+	padding-top: clamp(31px, 2.891vw, 37px);
+	border-radius: clamp(40px, 6.25vw, 80px);
+	img {
+		width: clamp(335px, 41.016vw, 525px);
+		height: clamp(356px, 38.984vw, 499px);
+	}
+}
+form {
+	position: relative;
+	display: flex;
+	input {
+		height: 48px;
+		max-width: 350px;
+		width: 100%;
+		border: 1px solid rgb(20, 20, 20);
+		border-radius: 100px;
+		opacity: 0.3;
+		color: rgb(193, 189, 189);
+		font-family: DM Sans;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: -4%;
+		padding-left: 24px;
+	}
+	button {
+		color: rgb(255, 255, 255);
+		font-family: DM Sans;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 18px;
+		letter-spacing: -4%;
+		text-transform: capitalize;
+		position: absolute;
+		border-radius: 100px;
+		background: rgb(252, 138, 17);
+		padding: 15px 35px;
+		height: 48px;
+		width: 105px;
+		left: 250px;
+		@media (max-width: 372px) {
+			display: block;
+			position: relative;
+			left: 0;
+			margin: 30px auto 0;
+		}
+	}
+}
+@media (max-width: 813px) {
+	.body {
+		justify-content: center;
+		gap: 40px;
+	}
+	.text__title,
+	.text__subtitle {
+		text-align: center;
+	}
+	form {
+		display: block;
+		max-width: 350px;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,44 @@
+@import "../../styles/variables.scss";
+.shiping {
+  margin: clamp(80px, 9.688vw, 124px) 0;
+}
+.container {
+  @extend %container-styles;
+}
+.body {
+  @extend %body-background;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 64px;
+  align-items: center;
+  img {
+    max-height: 339px;
+    max-width: 578px;
+    width: clamp(295px, 45.156vw, 578px);
+    height: clamp(172px, 26.484vw, 339px);
+    padding-right: 15px;
+  }
+}
+.title {
+  font-family: DM Sans;
+  font-size: clamp(24px, 3.125vw, 40px);
+  font-weight: 500;
+  line-height: clamp(28px, 3.438vw, 44px);
+  letter-spacing: -4%;
+  text-transform: uppercase;
+  .txt__products {
+    color: #a1c487;
+  }
+  .txt__best {
+    color: #fc8a11;
+  }
+}
+@media (max-width: 806px) {
+  .body {
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding: 0;
+  }
+}
