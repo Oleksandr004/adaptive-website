@@ -4,8 +4,8 @@ This project is a fully responsive vegetable delivery website built using **Reac
 
 ## Demo:
 
-![Adaptive website Demo](https://i.ibb.co/sVScsv6/Veggieboost.png)
 [LINK ON WEBSITE](https://adaptive-website-25.vercel.app/)
+![Adaptive website Demo](https://i.ibb.co/sVScsv6/Veggieboost.png)
 ## Table of Contents
 
 - [Features](#features)
